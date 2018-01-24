@@ -3,41 +3,57 @@
     <!-- HEAD -->
     <head>
         <meta charset="utf-8"/>
-        <title>Patten List</title>
+		<title>Patten List</title>
+		<style>
+			body {
+				color: #A1A7AE;
+			}
+			a {
+				color: #A1A7AE;
+			}
+		</style>
     </head>
     <!-- END HEAD -->
 
     <!-- BODY -->
-    <body>
-        <!--========== HEADER ==========-->
-        <header id="top">
-            <div id="nav">
-				<a href="index.html">Home</a></br>
-				<a href="addToList.html">Add To List</a></br>
-				<a href="login.html">Login</a></br>
-			</div>
-        </header>
-        <!--========== END HEADER ==========-->
+    <body id = "body" style="position:relative; margin: 0px 0px 0px; background-color:#18212B;">
+		<div id ="contentWrapper" style="width: 1000px; margin-left:auto; margin-right:auto; background-color:#1B2838; padding: 20px; min-height: 100vh">
+    		<!--========== HEADER ==========-->
+    		<header id="top">
+    		    <div id="nav">
+					<a href="index.html">Home</a></br>
+					<a href="addToList.html">Add To List</a></br>
+					<a href="login.html">Login</a></br>
+				</div>
+    		</header>
+    		<!--========== END HEADER ==========-->
 
-        <!--========== PAGE LAYOUT ==========-->
-        <div id="list">
-            <p>
-				Login Page
-			</p>
-        </div>
-        <!-- Back To Top -->
-        <div>
-            <a href="#nav">Top</a> 
-        </div>             
-        <!--========== END PAGE LAYOUT ==========-->
-
-        <!--========== FOOTER ==========-->
-        <footer>
-            <div id="copyright">
-                <p>Evan Patten 2018</p>
+    		<!--========== PAGE LAYOUT ==========-->
+    		<div id="content">
+                <p>
+                    Login
+                </p>
+                <form>
+                    Username:<br>
+                    <input type="text" name="username"><br>
+                    Password:<br>
+                    <input type="text" name="password">
+                </form>
             </div>
-        </footer>
-		<!--========== END FOOTER ==========-->
+			<!-- Back To Top -->
+    		<div id = "lowerNav" style = "padding-top : 15px">
+    		    <a href="#body">Top</a> 
+    		</div>             
+    		<!--========== END PAGE LAYOUT ==========-->
+
+    		<!--========== FOOTER ==========-->
+    		<footer>
+    		    <div id="copyright">
+    		        <p>Evan Patten 2018</p>
+    		    </div>
+    		</footer>
+			<!--========== END FOOTER ==========-->
+		</div>
     </body>
     <!-- END BODY -->
 </html>
